@@ -1,12 +1,20 @@
-# Starter Next/Hardhat Project
+# Connecting a smart contract to front end 
+This repo shows how to connect a smart contract to front end.
 
-After cloning the github, you will want to do the following to get the code running on your computer.
+## Tools
+```node```
+```hardhat```
+```next.js```
 
-1. Inside the project directory, in the terminal type: npm i
-2. Open two additional terminals in your VS code
-3. In the second terminal type: npx hardhat node
-4. In the third terminal, type: npx hardhat run --network localhost scripts/deploy.js
-5. Back in the first terminal, type npm run dev to launch the front-end.
+## Assessment.sol
+Contains a basic smart contract for minting and burning the tokens.
 
-After this, the project will be running on your localhost. 
-Typically at http://localhost:3000/
+## deploy.js
+Here we use the ethers.getContractFactory("Assessment") method to fetch our solidity smart contract and then deploy it.
+
+## index.js
+It is responsible for the front end.
+This is where we write the jsx code and the functions to interact with the smart contract.
+
+## Author 
+suke aka SujalKeer
